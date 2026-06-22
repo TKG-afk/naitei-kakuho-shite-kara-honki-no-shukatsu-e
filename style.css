@@ -485,10 +485,46 @@ h2 {
   text-align: center;
 }
 
+.advice-layout {
+  display: grid;
+  grid-template-columns: 360px minmax(0, 1fr);
+  gap: 44px;
+  align-items: center;
+  margin-top: 38px;
+}
+
+.senpai-profile {
+  position: relative;
+  margin: 0;
+  display: grid;
+  justify-items: center;
+  gap: 20px;
+}
+
+.senpai-profile img {
+  width: 330px;
+  height: 330px;
+  border: 10px solid var(--black);
+  border-radius: 50%;
+  display: block;
+  object-fit: cover;
+  object-position: 52% 32%;
+  background: var(--white);
+  box-shadow: 16px 16px 0 var(--yellow);
+}
+
+.senpai-profile figcaption {
+  padding: 12px 28px;
+  border: 5px solid var(--black);
+  background: var(--red);
+  color: var(--white);
+  font-size: 42px;
+  line-height: 1;
+}
+
 .speech {
   position: relative;
-  margin-top: 38px;
-  padding: 42px 52px;
+  padding: 40px 46px;
   border: 8px solid var(--black);
   border-radius: 8px;
   background: var(--white);
@@ -496,19 +532,16 @@ h2 {
 }
 
 .speech::before {
-  content: "H";
+  content: "";
   position: absolute;
-  top: -38px;
-  left: 44px;
-  display: grid;
-  place-items: center;
-  width: 86px;
-  height: 86px;
-  border-radius: 50%;
-  border: 6px solid var(--black);
-  background: var(--red);
-  color: var(--white);
-  font-size: 46px;
+  left: -34px;
+  top: 116px;
+  width: 50px;
+  height: 50px;
+  transform: rotate(45deg);
+  border-left: 8px solid var(--black);
+  border-bottom: 8px solid var(--black);
+  background: var(--white);
 }
 
 .speech ul {
